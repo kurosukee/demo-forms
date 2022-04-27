@@ -138,7 +138,8 @@ export default {
       sessionStorage.setItem('password', this.password);
       sessionStorage.setItem('birthOfMonth', this.birthOfMonth);
       sessionStorage.setItem('agree', this.agree);
-      window.location.href = 'login';
+      this.$router.push('/content')
+      // window.location.href = 'content';
     },
   }
 }
