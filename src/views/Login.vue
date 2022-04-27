@@ -58,8 +58,8 @@ export default {
       let store_password = sessionStorage.getItem('password');
       console.log(store_name, store_password, this.name, this.password)
       if (store_name == this.name && store_password == this.password) {
-        this.$router.push('/content')
-        // window.location.href = 'content';
+        // this.$router.push('/content')
+        window.location.href = 'content';
         return
       }
       this.message = '認証に失敗しました'
