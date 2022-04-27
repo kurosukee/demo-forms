@@ -15,7 +15,8 @@ module.exports = {
     //     .set('balm-ui-plus', 'balm-ui/dist/balm-ui-plus.js')
     //     .set('balm-ui-css', 'balm-ui/dist/balm-ui.css');
     // }
-    publicPath: process.env.NODE_ENV === 'production'
-    ? '/weather-app/'   //任意
-    : '/'
+    publicPath: '/demo-forms',
+    outputDir: 'docs',
+    filenameHashing: false,
+    productionSourceMap: false,
   };
