@@ -139,7 +139,7 @@ export default {
       sessionStorage.setItem('birthOfMonth', this.birthOfMonth);
       sessionStorage.setItem('agree', this.agree);
       // this.$router.push('/content')
-      window.location.href = 'content';
+      window.location.href = '/content';
     },
   }
 }
