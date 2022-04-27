@@ -9,10 +9,13 @@ module.exports = {
           'balm-ui-css': 'balm-ui/dist/balm-ui.css'
         }
       }
-    }
+    },
     // chainWebpack: (config) => {
     //   config.resolve.alias
     //     .set('balm-ui-plus', 'balm-ui/dist/balm-ui-plus.js')
     //     .set('balm-ui-css', 'balm-ui/dist/balm-ui.css');
     // }
+    publicPath: process.env.NODE_ENV === 'production'
+    ? '/weather-app/'   //任意
+    : '/'
   };
